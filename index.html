@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">My Portfolio</h1>
+      <nav class="space-x-4">
+        <a href="#about" class="text-blue-500 hover:underline">About</a>
+        <a href="#projects" class="text-blue-500 hover:underline">Projects</a>
+        <a href="#contact" class="text-blue-500 hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section With Image & Resume -->
+  <section class="bg-blue-500 text-white py-20">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col-reverse md:flex-row items-center gap-10">
+      
+      <!-- Text and Resume -->
+      <div class="md:w-1/2 text-center md:text-left">
+        <h2 class="text-4xl font-bold mb-4">Hi, I'm Vishal Kumar</h2>
+        <p class="text-lg mb-6">A Web Developer passionate about creating beautiful, responsive websites.</p>
+        <a href="resume.pdf" download class="inline-block bg-white text-blue-600 font-semibold px-6 py-2 rounded shadow hover:bg-gray-200 transition">
+          Download Resume
+        </a>
+      </div>
+      
+      <!-- Photo -->
+      <div class="md:w-1/2 flex justify-center">
+        <img src="vishal.jpg" class="rounded-full w-60 h-60 object-cover shadow-lg border-4 border-white" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="max-w-4xl mx-auto p-6">
+    <h3 class="text-3xl font-semibold mb-4">About Me</h3>
+    <p class="text-lg leading-relaxed">
+      "Hello! I'm Vishal Kumar, a passionate Full Stack Developer with a zeal for building scalable, efficient, and innovative solutions. With a
+      strong foundation in both front-end and back-end development, I thrive on creating dynamic web applications that deliver exceptional
+      user experiences.
+      Proficient in a range of programming languages, including Java, HTML/CSS, C, C++,DSA I'm always eager to expand my skill set and
+      stay up-to-date with the latest industry trends.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="bg-white py-10">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-semibold mb-8 text-center">Projects</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-gray-200 p-4 rounded shadow">
+          <h4 class="text-xl font-bold">Project One</h4>
+          <p class="mt-2">First project is a portfolio website for Vishal Kumar, a Full Stack Developer. The site is built with HTML,Tailwind CSS, giving it a modern and responsive design..</p>
+        </div>
+        <div class="bg-gray-200 p-4 rounded shadow">
+          <h4 class="text-xl font-bold">Project Two</h4>
+          <p class="mt-2">A sleek and interactive music player website created using HTML, CSS, and JavaScript. It allows users to play, pause, skip tracks, and enjoy a modern UI with animated transitions and responsive design..</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-4xl mx-auto p-6">
+    <h3 class="text-3xl font-semibold mb-4">Contact Me</h3>
+    <form class="space-y-4">
+      <input type="text" placeholder="Vishal Kumar" class="w-full border border-gray-300 p-2 rounded" />
+      <input type="email" placeholder="Vishalmehta072002@gmail.com" class="w-full border border-gray-300 p-2 rounded" />
+      <textarea placeholder="Your Message" rows="4" class="w-full border border-gray-300 p-2 rounded"></textarea>
+      <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+        Send Message
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-4 mt-10">
+    &copy; 2025 Vishal Kumar. All rights reserved.
+  </footer>
+
+</body>
+</html>
